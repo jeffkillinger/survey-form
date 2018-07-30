@@ -1,0 +1,78 @@
+body {
+	font-family: 'lora', serif;
+	font-weight: 200;
+	background: linear-gradient(#234558, #1ed2f4);
+	text-align: center;
+}
+
+h1 {
+  color: #f4f5f6;
+}
+
+#form-body {
+	background-color: #2b2b3a;
+	border-radius: 5px;
+	margin: 0 auto;
+	width: 65%;
+	padding: 10px;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+p {
+  font-size: 20px;
+  color: #eafc40;
+}
+
+label, legend {
+  font-size: 17px;
+  color: #f4f5f6;
+}
+
+.row {
+	padding: 5px;
+}
+
+.label{
+	display: inline-block;
+	text-align: right;
+	padding: 7px;
+}
+
+.input {
+	display: inline-block;
+	text-align: left;
+}
+
+.input-field {
+	height: 15px;
+	width: 250px;
+	border-radius: 5px;
+}
+
+fieldset {
+	border: 0px;
+}
+
+textarea {
+	border-radius: 5px;
+}
+
+button {
+	margin: 15px;
+	height: 40px;
+	width: 75px;
+	border-radius: 15px;
+	font-style: bold;
+	font-size: 15px;
+}
+
+button:hover {
+	background-color: #166088;
+	color: #DBE9EE;
+}

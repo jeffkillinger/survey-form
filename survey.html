@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Survey Form</title>
+    	<link rel="stylesheet" type="text/css" href="styles.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    </head>
+    
+  <body>
+  	<h1 id="title">Product Survey</h1>
+  	<div id="form-body">
+  	<p id="description">Please let us know how we can improve your experience.</p>
+  		<form id="survey-form" method="POST" action="#">
+  			<div class="row">
+  				<div class="label">
+  					<label id="name-label" for="name">Name: </label>
+  				</div>
+  				<div class="input">
+  					<input autofocus type="text" name="name" id="name" class="input-field" placeholder="John Doe" required>
+  				</div>
+  			</div>
+
+  			<div class="row">
+  				<div class="label">
+  					<label id="email-label" for="email">Email: </label>
+  				</div>
+  				<div class="input">
+  					<input type="email" name="email" id="email" class="input-field" placeholder="john.doe@email.com" required>
+  				</div>
+  			</div>
+
+  			<div class="row">
+  				<div class="label">
+  					<label id="number-label" for="age">Age: </label>
+  				</div>
+  				<div class="input">
+  					<input type="number" name="age" id="number" min="1" max="120" class="input-field" placeholder="18">
+  				</div>
+  			</div>
+
+  			<div class="row">
+  				<div class="label">
+  					<label id="ref-id" for="reference">How did you hear about us?</label>
+  				</div>
+  				<div class="input">
+  					<select name="reference" id="dropdown" class="dropdown">
+  						<option disabled value>Choose One:</option>
+  						<option value="youtube">YouTube</option>
+  						<option value="facebook">Facebook</option>
+  						<option value="twitter">Twitter</option>
+  						<option value="instagram">Instagram</option>
+  						<option value="other">Other</option>
+  					</select>
+  				</div>
+  			</div>
+
+  			<fieldset class="row">
+  				<div class="label">
+  					<legend>How likely are you to refer your friends and family to us?</legend>
+  				</div>
+
+  				<div class="input">
+  					<input id="very" type="radio" name="items" value="very" checked>
+  					<label for="very">Very likely</label>
+
+
+  					<input id="somewhat" type="radio" name="items" value="somewhat">
+  					<label for="somewhat">Somewhat likely</label>
+
+
+  					<input id="not" type="radio" name="items" value="not">
+  					<label for="not">Not at all likely</label>
+  				</div>
+  			</fieldset>
+
+  			<fieldset class="row">
+  				<div class="label">
+  					<legend>In which areas do you think we can improve?</legend>
+  				</div>
+
+  				<div class="input">
+
+  					<input id="quality" type="checkbox" name="checks" value="quality">
+  					<label for="quality">Product quality</label>
+
+  					<input id="warranty" type="checkbox" name="checks" value="warranty">
+  					<label for="warranty">Warranty options</label>
+
+  					<input id="serivce" type="checkbox" name="checks" value="serivce">
+  					<label for="serivce">Customer serivce</label>
+  				</div>
+
+  			</fieldset>
+
+  			<div class="row">
+  				<label>Please add any comments or suggestions: </label>
+  				<textarea id="txt-area" rows="5" cols="45" placeholder="Comments? Suggestions?"></textarea>
+  			</div>
+
+  			<button id="submit" type="submit">Submit</button>
+
+  		</form>
+  	</div>
+  </body>
+</html>
